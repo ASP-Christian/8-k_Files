@@ -1,9 +1,7 @@
 name: Upload to Google Sheets
 
 on:
-  push:
-    branches:
-      - main
+  workflow_dispatch:
 
 jobs:
   build:
@@ -16,7 +14,7 @@ jobs:
 
       - name: Install dependencies
         run: |
-          pip install pandas selenium gspread oauth2client df2gspread
+          pip install pandas selenium gspread oauth2client
 
       - name: Set up secrets
         env:
