@@ -22,5 +22,5 @@ jobs:
         run: echo "$GOOGLE_APPLICATION_CREDENTIALS" > creds.json
 
       - name: Run the script
-        run: python scripts/runapp.py
+        run: python apper.py
 
